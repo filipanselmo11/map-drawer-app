@@ -42,7 +42,7 @@ export default {
   },
   methods: {
     initMap() {
-      this.map = L.map("map").setView(center, 0); //Criando Mapa
+      this.map = L.map("map", { drawControl: true}).setView(center, 0); //Criando Mapa
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         attribution: 'Data © <a href="http://osm.org/copyright">OpenStreetMap</a>',
         maxZoom: 18,
